@@ -1,4 +1,5 @@
 __pycache__
 app.db
+
 uploads/*
-!uploads/
+*.gitkeep
