@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head>
+<style>
+    body {width: 75%; margin: 1rem auto; border-collapse: collapse; border: 1px solid black;} ul, li {list-style-type: none} li {display: inline-block; margin-right: 10px;} table, ul {width: 90%; margin: 1rem auto} table, th, td {border-collapse: collapse;border: 1px solid black;} ul {padding-left: 0; margin-left: 5px;} ul li:first-child {margin-right: 5rem;}
+</style>
+<script>function goback() {window.history.back();}</script>
+</head>
+<body>
+    <ul>
+        <li><a href="javascript:void(0);" onclick="goback()">Back</a></li>
+        <li><a href="{{ url_for('shop.home') }}">Home</a></li>
+        <li><a href="{{ url_for('shop.add') }}">Add</a></li>
+        <li><a href="{{ url_for('shop.category_add') }}">CategoryAdd</a></li>
+    </ul> <hr>
+    {% block content %}{% endblock %}
+</body></html>
